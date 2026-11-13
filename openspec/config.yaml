@@ -1,0 +1,10 @@
+schema: spec-driven
+
+context: |
+  Language: de
+  All artifacts must be written in de.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+
+  This repository is a workspace for domain-neutral Rust crates shared by
+  gerontosepp projects (Vinyl Tracker, party/DJ app, future projects).
+  Specs describe library contracts, not application features.
