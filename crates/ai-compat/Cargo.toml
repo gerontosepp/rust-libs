@@ -1,0 +1,17 @@
+[package]
+name = "ai-compat"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Domain-neutral OpenAI-compatible chat client with provider presets and tool calls"
+
+[dependencies]
+reqwest = { workspace = true, features = ["json"] }
+
+[features]
+default = ["rustls-tls"]
+rustls-tls = ["reqwest/rustls", "reqwest/webpki-roots"]
+# For consumers that install their own rustls crypto provider (e.g. ring).
+rustls-no-provider = ["reqwest/rustls-no-provider"]

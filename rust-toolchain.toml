@@ -1,0 +1,6 @@
+# Shared Rust crates.
+# The version matches the Vinyl Tracker toolchain; consumers may build with a newer stable.
+[toolchain]
+channel = "1.100.0"
+profile = "minimal"
+components = ["rustfmt", "clippy"]
